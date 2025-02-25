@@ -1,0 +1,124 @@
+@import "tailwindcss";
+#root {
+ 
+}
+
+.main-block {
+  background-image: url(../src/assets/white.png);
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+}
+
+.adults {
+ background-image: url(../src/assets/astral.png);
+}
+
+header nav a {
+  margin-right: 13px;
+}
+
+.active-link {
+  color: white
+}
+
+.mode-btn {
+  border: 1px solid black;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hot-mode {
+  display: block;
+  width: 50px;
+  height: 30px;
+}
+
+.add-btn {
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.input {
+  width: 200px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: white;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.item-done {
+  width: 250px;
+  border-radius: 4px;
+}
+
+.done-btn, .remove-btn {
+  display: block;
+  width: 30px;
+  height: 20px;
+}
+
+.condom-svg {
+  display: block;
+  width: 30px;
+  height: 20px;
+}
+
+
+@media (max-width: 500px) {
+
+  .main-block {
+    background-image: url(../src/assets/white.png);
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+  }
+
+  .adults {
+    background-image: url(../src/assets/astral.png);
+   }
+
+  .mode-btn {
+    border: 1px solid black;
+    padding: 4px 6px;
+    font-size: 11px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .add-btn {
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 10px;
+    height: 24px;
+  }
+  
+  .input {
+    width: 100px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    font-size: 10px;
+  }
+  .item {
+    width: 250px;
+    border-radius: 4px;
+  }
+  
+
+  .input-box {
+    text-align: center;
+  }
+}
