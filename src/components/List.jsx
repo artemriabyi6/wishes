@@ -232,12 +232,15 @@ const List = (props) => {
     <>
       {paginationItems.map((item, index) => (
         <div className="item flex w-xs bg-white p-2 justify-between mb-5 items-center rounded-md" key={startIndex + index}>
-          <p>{startIndex + index + 1}. {item}</p>
-          <div>
+          <div className="flex flex-wrap w-40 gap-2">
+          <p className="w-full text-xs">{startIndex + index + 1}. {item}</p>
+          </div>
+        
+          <div className="flex items-center">
             <button onClick={() => doneActivity(startIndex + index, props.mode)} className="cursor-pointer">
               <img className="done-btn" src={fileBoardDoneBtn} alt="Done" />
             </button>
-            <button onClick={() => removeActivity(startIndex + index)} className="ml-5 cursor-pointer">
+            <button onClick={() => removeActivity(startIndex + index)} className="ml-2 cursor-pointer">
               <img className="remove-btn" src={removeBtn} alt="remove" />
             </button>
           </div>

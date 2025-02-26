@@ -100,7 +100,7 @@ const Done = (props) => {
       {paginationItems.map((item, index) => (
         <div className="item-done flex w-xs bg-white p-2 justify-between mb-5 items-center" key={startIndex + index}>
           <p>{startIndex + index + 1}. {item}</p>
-          <button onClick={() => removeActivity(startIndex + index, props.mode ? props.setDoneAdults : props.setDone, data)} className="ml-5 cursor-pointer">
+          <button onClick={() => removeActivity(startIndex + index, props.mode ? props.setDoneAdults : props.setDone, data)} className="ml-2 cursor-pointer">
             <img className="remove-btn" src={removeBtn} alt="remove" />
           </button>
         </div>
